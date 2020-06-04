@@ -31,6 +31,6 @@ int main (int argc, char *argv[])
 
   cout << A << "°" << B << "\'" << C << "\"" << endl;
   cout << "В секундах дуги:" << S << endl;
-  
+
   return 0;
 }
