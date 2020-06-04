@@ -1,23 +1,24 @@
 #include <iostream>
+#include <sstream>
+#include <ctime>
+#include <iomanip>
+
 
 using namespace std;
 
 int main (int argc, char *argv[])
 {
-  cout << "hours:" << endl;
-  int hours;
-  cin >> hours;
+ if (argc < 1)
+    return 0;
 
-  cout << "minutes:" << endl;
-  int minutes;
-  cin >> minutes;
+  std::tm tm1 = {};
+  std::istringstream s1 (argv[1]);
 
-  cout << "seconds:" << endl;
-  int seconds;
-  cin >> seconds;
+  s1 >> get_time (&tm1, "%H:%M:%S");
+
 
  //переводим в секунды
-  int secs = (hours)*3600 + (minutes)*60 + seconds;
+  int secs = (tm1.tm_hour)*3600 + (tm1.tm_min)*60 + tm1.tm_sec;
 
 // меру угла из часовой системы в градусную
   float S = secs * 15;
