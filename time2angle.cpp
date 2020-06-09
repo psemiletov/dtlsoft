@@ -30,6 +30,7 @@ int main (int argc, char *argv[])
   int B1 = B * 60;
   int C = S1 - B1;
 
+  cout << "В десятичных градусах: " << (float) S / 3600 << endl;
   cout << A << "°" << B << "\'" << C << "\"" << endl;
   cout << "В секундах дуги:" << S << endl;
 

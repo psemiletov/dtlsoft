@@ -1,1 +1,4 @@
 The set of small programs useful for Dyatlov Pass case research
+
+time2angle hh:mm:ss - переводит из времени hh:mm:ss в угловую меру
+timediff hh:mm:ss hh:mm:ss - вычисляет разницу между двумя показаниями часов
